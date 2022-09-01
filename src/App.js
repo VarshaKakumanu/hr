@@ -3,6 +3,7 @@ import SideBar from "./components/Sidebar/SideBar";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import Dashboard from "./pages/Dashboard";
+import Iveond from "./pages/Iveond";
 import Users from "./pages/Users";
 import Messages from "./pages/Messages";
 import FileManager from "./pages/FileManager";
@@ -16,6 +17,7 @@ function App() {
       <SideBar>
         <Routes>
           <Route path="/" element={<Dashboard />} />
+          <Route path="/iveond" element={<Iveond />} />
           <Route path="/users" element={<Users />} />
           <Route path="/messages" element={<Messages />} />
           <Route path="/analytics" element={<Analytics />} />

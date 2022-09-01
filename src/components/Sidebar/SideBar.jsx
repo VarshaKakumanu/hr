@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { FaBars, FaHome, FaLock, FaMoneyBill, FaUser } from "react-icons/fa";
 import { MdMessage } from "react-icons/md";
+import { ImOffice } from "react-icons/im";
 import { BiAnalyse, BiSearch } from "react-icons/bi";
 import { BiCog } from "react-icons/bi";
 import { AiFillHeart, AiTwotoneFileExclamation } from "react-icons/ai";
@@ -8,11 +9,17 @@ import { BsCartCheck } from "react-icons/bs";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import SidebarMenu from "./SidebarMenu";
+import pic from "./iv.png";
 const routes = [
   {
     path: "/",
     name: "Dashboard",
     icon: <FaHome />,
+  },
+  {
+    path: "/iveond",
+    name: "Iveond",
+    icon: <ImOffice/>,
   },
   {
     path: "/users",
@@ -41,7 +48,7 @@ const routes = [
       },
       {
         path: "/settings/2fa",
-        name: "2FA",
+        name: "Password",
         icon: <FaLock />,
       },
       {
@@ -69,7 +76,7 @@ const routes = [
       },
       {
         path: "/settings/2fa",
-        name: "2FA",
+        name: "Password",
         icon: <FaLock />,
       },
       {
@@ -148,7 +155,7 @@ const SideBar = ({ children }) => {
                   exit="hidden"
                   className="logo"
                 >
-                  DoSomeCoding
+                 <img style={{height:"35px"}} src={pic} alt="iveond"/>
                 </motion.h1>
               )}
             </AnimatePresence>
