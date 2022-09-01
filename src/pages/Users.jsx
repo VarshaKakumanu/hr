@@ -3,10 +3,10 @@ import image from "../logo.svg";
 
 function BasicExample() {
   return (
-    <Container className="justify-content-center">
+    <Container className="fluid">
       <Row>
-      <Col>
-          <Card style={{ width: '18rem' }}>
+      <Col md={{ span: 12, offset: 3 }}>{
+          <Card style={{ width: '30rem' }}>
              <Card.Img variant="top" src={image} />
                <Card.Body>
                 <Card.Title>Card Title</Card.Title>
@@ -16,13 +16,13 @@ function BasicExample() {
                    </Card.Text>
                   <Button variant="primary">Go somewhere</Button>
                 </Card.Body>
-          </Card>
+          </Card>}
        </Col>
-    </Row>
-    <br />
-    <Row>
-      <Col md={{ span: 12, offset: 6 }}>{
-          <Card style={{ width: '18rem' }}>
+       </Row>
+   <br />
+<Row>
+      <Col md={{ span:12 , offset: 3 }}>{
+          <Card style={{ width: '30rem' }}>
              <Card.Img variant="top" src={image} />
                <Card.Body>
                 <Card.Title>Card Title</Card.Title>
