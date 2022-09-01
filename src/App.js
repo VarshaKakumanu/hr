@@ -11,6 +11,7 @@ import Analytics from "./pages/Analytics";
 import Order from "./pages/Order";
 import Saved from "./pages/Saved";
 import Setting from "./pages/Setting";
+import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <Router>
