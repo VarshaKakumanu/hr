@@ -1,6 +1,8 @@
 import "./App.css";
 import SideBar from "./components/Sidebar/SideBar";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+//import { Button , Container , Nav , NavDropdown , Alert , Card ,Row ,Col} from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 import Dashboard from "./pages/Dashboard";
 import Iveond from "./pages/Iveond";
