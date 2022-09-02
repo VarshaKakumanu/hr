@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import {  FaHome, FaLock, FaMoneyBill, FaUser } from "react-icons/fa";
+import { FaBars, FaHome, FaLock, FaMoneyBill, FaUser } from "react-icons/fa";
 import { MdMessage } from "react-icons/md";
 import { ImOffice } from "react-icons/im";
 import { BiAnalyse, BiSearch } from "react-icons/bi";
@@ -95,7 +95,7 @@ const routes = [
 
 const SideBar = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false);
- // const toggle = () => setIsOpen(!isOpen);
+  const toggle = () => setIsOpen(!isOpen);
   const inputAnimation = {
     hidden: {
       width: 0,
@@ -161,7 +161,7 @@ const SideBar = ({ children }) => {
             </AnimatePresence>
 
             <div className="bars">
-              {/* <FaBars onClick={toggle} /> */}
+              <FaBars onClick={toggle} />
             </div>
           </div>
           <div className="search">
