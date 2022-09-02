@@ -5,10 +5,18 @@
 }
 
 .main-container {
+ 
   display: flex;
+  flex-wrap: nowrap;
+  justify-content: left;
+  background-color: #f2f4f6;
+  max-width: '100%' ! important;
 }
 main {
   padding: 10px;
+  min-width: 1700px !important;
+  max-width: 1700px !important
+
 }
 
 .title {
@@ -19,7 +27,7 @@ main {
 
 /* Sidebar */
 .sidebar {
-  background: rgb(0, 7, 61);
+  background: #122b3f;
   color: white;
   height: 100vh;
   overflow-y: auto;
@@ -55,7 +63,7 @@ main {
   border-radius: 5px;
   background: rgb(238, 238, 238);
 
-  color: rgb(255, 255, 255);
+  color: rgb(36, 64, 95);
 }
 
 .routes {
@@ -74,12 +82,12 @@ main {
 }
 .link:hover {
   border-right: 4px solid white;
-  background: rgb(45, 51, 89);
+  background: rgb(236, 176, 106);
   transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
 }
 .active {
   border-right: 4px solid white;
-  background: rgb(45, 51, 89);
+  background: rgb(223, 133, 48);
 }
 .link_text {
   white-space: nowrap;
@@ -106,4 +114,25 @@ main {
 .menu_container .link {
   padding-left: 20px;
   border-bottom: #fff 0.5px solid;
+}
+.Col{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+a {
+  text-decoration: none !important;
+}
+#sri{
+  max-width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.Col{
+  flex: 100%;
+}
+@media screen and (min-width: 1200px) {
+ .main{
+  max-width: '1000px'  !important;
+  }
 }
