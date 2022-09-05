@@ -9,13 +9,16 @@
   display: flex;
   flex-wrap: nowrap;
   justify-content: left;
-  background-color: #f2f4f6;
+  background-color: #f5f3f3;
+  height: 100%;
+  width: 100%;
  
-  
 }
 main {
   padding: 10px;
-  min-width: 1640px;
+  width: 100%;
+  overflow: scroll;
+  height: 100vh;
 }
 
 .title {
@@ -30,6 +33,10 @@ main {
   color: white;
   height: 100vh;
  
+ 
+  overflow:auto;
+  padding: 8px 0;
+  
 }
 
 .top_section {
@@ -37,6 +44,7 @@ main {
   align-items: center;
   justify-content: space-between;
   padding: 15px 10px;
+  
 }
 .logo {
   font-size: 18px;
@@ -124,8 +132,7 @@ a {
 #sri{
   max-width: 100%;
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
+  flex-wrap: wrap;
 }
 .Col{
   flex: 100%;

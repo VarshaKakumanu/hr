@@ -38,22 +38,22 @@ const routes = [
   },
   {
     path: "/file-manager",
-    name: "File Manager",
+    name: "Services",
     icon: <AiTwotoneFileExclamation />,
     subRoutes: [
       {
         path: "/settings/profile",
-        name: "Profile ",
+        name: "Project Support ",
         icon: <FaUser />,
       },
       {
         path: "/settings/2fa",
-        name: "Password",
+        name: "Design&Development",
         icon: <FaLock />,
       },
       {
         path: "/settings/billing",
-        name: "Billing",
+        name: "IT Trainimg",
         icon: <FaMoneyBill />,
       },
     ],
@@ -94,7 +94,7 @@ const routes = [
 ];
 
 const SideBar = ({ children }) => {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
   const inputAnimation = {
     hidden: {
@@ -162,10 +162,10 @@ const SideBar = ({ children }) => {
             </AnimatePresence>
 
             <div className="bars">
-             
+             <FaBars onClick={toggle}/>
             </div>
           </div>
-          <div className="search">
+          {/* <div className="search">
             <div className="search_icon">
               <BiSearch />
             </div>
@@ -181,7 +181,7 @@ const SideBar = ({ children }) => {
                 />
               )}
             </AnimatePresence>
-          </div>
+          </div> */}
           <section className="routes">
             {routes.map((route, index) => {
               if (route.subRoutes) {
