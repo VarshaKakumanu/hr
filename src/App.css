@@ -10,13 +10,12 @@
   flex-wrap: nowrap;
   justify-content: left;
   background-color: #f2f4f6;
-  max-width: '100%' ! important;
+ 
+  
 }
 main {
   padding: 10px;
-  min-width: 1700px !important;
-  max-width: 1700px !important
-
+  min-width: 1640px;
 }
 
 .title {
@@ -27,10 +26,10 @@ main {
 
 /* Sidebar */
 .sidebar {
-  background: #122b3f;
+  background: #2a75b3;
   color: white;
   height: 100vh;
-  overflow-y: auto;
+ 
 }
 
 .top_section {
@@ -82,12 +81,13 @@ main {
 }
 .link:hover {
   border-right: 4px solid white;
-  background: rgb(236, 176, 106);
+  background:  rgb(20, 79, 128);
   transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  color: #f2f4f6;
 }
 .active {
   border-right: 4px solid white;
-  background: rgb(223, 133, 48);
+  background: rgb(20, 79, 128);
 }
 .link_text {
   white-space: nowrap;
@@ -116,8 +116,7 @@ main {
   border-bottom: #fff 0.5px solid;
 }
 .Col{
-  padding-left: 10px;
-  padding-right: 10px;
+  
 }
 a {
   text-decoration: none !important;
@@ -131,8 +130,8 @@ a {
 .Col{
   flex: 100%;
 }
-@media screen and (min-width: 1200px) {
- .main{
-  max-width: '1000px'  !important;
+@media only screen and (max-device-width: 480px){
+  main{
+    min-width: none;
   }
 }

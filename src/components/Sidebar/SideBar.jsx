@@ -9,7 +9,7 @@ import { BsCartCheck } from "react-icons/bs";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import SidebarMenu from "./SidebarMenu";
-import pic from "./iv.png";
+//import pic from "./iv.png";
 const routes = [
   {
     path: "/",
@@ -94,7 +94,7 @@ const routes = [
 ];
 
 const SideBar = ({ children }) => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
   const toggle = () => setIsOpen(!isOpen);
   const inputAnimation = {
     hidden: {
@@ -135,7 +135,7 @@ const SideBar = ({ children }) => {
       <div className="main-container">
         <motion.div
           animate={{
-            width: isOpen ? "200px" : "45px",
+            width: isOpen ? "230px" : "45px",
 
             transition: {
               duration: 0.5,
@@ -155,13 +155,14 @@ const SideBar = ({ children }) => {
                   exit="hidden"
                   className="logo"
                 >
-                 <img style={{height:"35px"}} src={pic} alt="iveond"/>
+                 {/* <img style={{height:"35px"}} src={pic} alt="iveond"/> */}
+                 <h5>LUCID</h5>
                 </motion.h1>
               )}
             </AnimatePresence>
 
             <div className="bars">
-              <FaBars onClick={toggle} />
+             
             </div>
           </div>
           <div className="search">

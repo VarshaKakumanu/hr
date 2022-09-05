@@ -5,7 +5,7 @@ const Users = () => {
   return (
     <Container fluid="xxl" className="m-2 " id='sri'>
       <Row style={{width:"100%",alignContent:'center'}} fluid="xxl" className="m4">
-        <Col  xxl={8} className="shadow mt-4 card border-1">
+        <Col  xxl={8} className="shadow mt-1 card border-1">
           <h5 className="mb-3 mt-3">Information</h5>
           <Form className="mb-3 mt-3">
             <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -28,9 +28,9 @@ const Users = () => {
             </Button>
           </Form>
         </Col>
-        <Col  xxl={1}></Col>
+        <Col  xxl={1}>hiii</Col>
 
-        <Col  xxl={3} className="shadow mt-4 card " >
+        <Col  xxl={3} className="shadow mr-4 card " >
         <Card >
       <Card.Img variant="top" src="holder.js/100px180" />
       <Card.Body>
