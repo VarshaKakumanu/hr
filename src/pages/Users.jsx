@@ -1,44 +1,86 @@
-import React  from "react";
-import { Button, Container , Card  , Row ,Col} from "react-bootstrap";
-import image from "../logo.svg";
+              <Form.Label>Password</Form.Label>
+              <Form.Control type="password" placeholder="Password" />
+            </Form.Group>
+            <Form.Group className="mb-3" controlId="formBasicCheckbox">
+              <Form.Check type="checkbox" label="Check me out" />
+            </Form.Group>
+            <Button variant="primary" type="submit">
+              Submit
+            </Button>
+          </Form>
+        </Col>
+        <Col lg={1}></Col>
 
-function BasicExample() {
-  return (
-    <Container className="fluid">
-      <Row>
-      <Col md={{ span: 12, offset: 3 }}>{
-          <Card style={{ width: '30rem' }}>
-             <Card.Img variant="top" src={image} />
-               <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                   <Card.Text>
-                      Some quick example text to build on the card title and make up the
-                      bulk of the card's content.
-                   </Card.Text>
-                  <Button variant="primary">Go somewhere</Button>
-                </Card.Body>
-          </Card>}
-       </Col>
-       </Row>
-   <br />
-<Row>
-      <Col md={{ span:12 , offset: 3 }}>{
-          <Card style={{ width: '30rem' }}>
-             <Card.Img variant="top" src={image} />
-               <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                   <Card.Text>
-                      Some quick example text to build on the card title and make up the
-                      bulk of the card's content.
-                   </Card.Text>
-                  <Button variant="primary">Go somewhere</Button>
-                </Card.Body>
-          </Card>}
-       </Col>
-    </Row>
-    </Container>
+        <Col lg={3} className="shadow mr-4 card ">
+          <Card>
+            <Card.Img variant="top" src="holder.js/100px180" />
+            <Card.Body>
+              <Card.Title>Card Title</Card.Title>
+              <Card.Text>
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </Card.Text>
+              <Button variant="primary">Go somewhere</Button>
+            </Card.Body>
+          </Card>
+        </Col>
+      </Row>
+      <Row className="m-4" style={{ width: "100%",height:'420px'}}>
+        <Col lg={6} className="shadow mt-1 card border-1">
+          <Carousel style={{ paddingTop:'10px'}}>
+            <Carousel.Item  style={{ paddingBottom:'0px' }}>
+              <img
+                style={{ height: "400px" }}
+                className="d-block w-100"
+                src={pic1}
+                alt="First slide"
+              />
+              <Carousel.Caption>
+                
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                style={{ height: "400px" }}
+                className="d-block w-100"
+                src={pic2}
+                alt="Second slide"
+              />
+
+              <Carousel.Caption>
+                
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                style={{ height: "400px" }}
+                className="d-block w-100"
+                src={pic3}
+                alt="Third slide"
+              />
+
+              <Carousel.Caption>
+                
+              </Carousel.Caption>
+            </Carousel.Item>
+          </Carousel>
+        </Col>
+        <Col lg={6} style={{}} className="shadow mt-1  mr-4 card ">
+        <ListGroup   style={{ height: "400px" }}>
+      <ListGroup.Item>Cras justo odio</ListGroup.Item>
+      <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
+      <ListGroup.Item>Morbi leo risus</ListGroup.Item>
+      <ListGroup.Item>Porta ac consectetur ac</ListGroup.Item>
+      <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
+      <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
+    </ListGroup>
+
+
+        </Col>
+      </Row>
+      
+  </>
   );
-}
+};
 
-export default BasicExample;
-
+export default Users;

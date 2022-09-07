@@ -9,11 +9,11 @@ import { BsCartCheck } from "react-icons/bs";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import SidebarMenu from "./SidebarMenu";
-import pic from "./iv.png";
+//import pic from "./iv.png";
 const routes = [
   {
     path: "/",
-    name: "Dashboard",
+    name: "Home",
     icon: <FaHome />,
   },
   {
@@ -38,22 +38,22 @@ const routes = [
   },
   {
     path: "/file-manager",
-    name: "File Manager",
+    name: "Services",
     icon: <AiTwotoneFileExclamation />,
     subRoutes: [
       {
         path: "/settings/profile",
-        name: "Profile ",
+        name: "Project Support ",
         icon: <FaUser />,
       },
       {
         path: "/settings/2fa",
-        name: "Password",
+        name: "Design&Development",
         icon: <FaLock />,
       },
       {
         path: "/settings/billing",
-        name: "Billing",
+        name: "IT Trainimg",
         icon: <FaMoneyBill />,
       },
     ],
@@ -140,7 +140,7 @@ const SideBar = ({ children }) => {
       <div className="main-container">
         <motion.div
           animate={{
-            width: isOpen ? "200px" : "45px",
+            width: isOpen ? "230px" : "45px",
 
             transition: {
               duration: 0.5,
@@ -160,16 +160,17 @@ const SideBar = ({ children }) => {
                   exit="hidden"
                   className="logo"
                 >
-                 <img style={{height:"35px"}} src={pic} alt="iveond"/>
+                 {/* <img style={{height:"35px"}} src={pic} alt="iveond"/> */}
+                 <h5>LUCID</h5>
                 </motion.h1>
               )}
             </AnimatePresence>
 
             <div className="bars">
-              <FaBars onClick={toggle} />
+             <FaBars onClick={toggle}/>
             </div>
           </div>
-          <div className="search">
+          {/* <div className="search">
             <div className="search_icon">
               <BiSearch />
             </div>
@@ -185,7 +186,7 @@ const SideBar = ({ children }) => {
                 />
               )}
             </AnimatePresence>
-          </div>
+          </div> */}
           <section className="routes">
             {routes.map((route, index) => {
               if (route.subRoutes) {
