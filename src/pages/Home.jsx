@@ -52,13 +52,14 @@ const Home = () => {
         </Col>
       </Row>
       <Row  className="m-4 shadow  card border-1" style={{width:'97%'}}>
+      <h5>Footer</h5>
       <Col lg={4} className="shadow  card border-0">
-          <h5>Footer</h5>
+         
         <img src={pic3} alt="card"></img>
 
         </Col>
 
-     <hr style={{width:'1200px',marginTop:'20px',marginLeft:'230px'}}></hr>
+     <hr style={{marginTop:'20px'}}></hr>
      <p style={{textAlign:'center'}}>@copy rights</p>
       </Row>
     </>
