@@ -1,4 +1,5 @@
-import { Button, Container , Card ,  Row ,Col} from "react-bootstrap";
+import React  from "react";
+import { Button, Container , Card  , Row ,Col} from "react-bootstrap";
 import image from "../logo.svg";
 
 function BasicExample() {
