@@ -15,7 +15,7 @@
  
 }
 main {
-  padding: 10px;
+  
   width: 100%;
   overflow: scroll;
   height: 100vh;
@@ -35,7 +35,7 @@ main {
  
  
   overflow:auto;
-  padding: 8px 0;
+  padding-right: 8px 0px ;
   
 }
 
@@ -123,22 +123,40 @@ main {
   padding-left: 20px;
   border-bottom: #fff 0.5px solid;
 }
-.Col{
-  
-}
 a {
   text-decoration: none !important;
 }
 #sri{
-  max-width: 100%;
+  min-width: 100% !important;
   display: flex;
   flex-wrap: wrap;
+  margin: 0px !important;
+  
+}
+#home{
+  background-image: url("./images/2.jpg");
+
+  
+  height: 80%; 
+
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #2a75b3;
 }
 .Col{
   flex: 100%;
 }
-@media only screen and (max-device-width: 480px){
-  main{
-    min-width: none;
+@media  screen and (max-width: 480px){
+  .sidebar{
+    width: 0px !important;
   }
+  .menu_container .link{
+    padding-left: 10px !important;
+  }
+  .bars{
+    position:absolute;
+  }
+  
 }

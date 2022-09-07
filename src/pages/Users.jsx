@@ -11,11 +11,24 @@ import {
 import pic1 from "../images/1.jpg";
 import pic2 from "../images/2.jpg";
 import pic3 from "../images/3.jpg";
+import {ImLocation } from "react-icons/im";
+import {MdCall } from "react-icons/md";
 //import "../App.css";
 const Users = () => {
   return (
-    <Container className="  mt-4" id="sri">
-      <Row style={{ width: "100%" }}>
+    <>
+    
+      <Row  className="mb-4 m-4"  >
+        <Col xl={6} width><h3 style={{color:'#2a75b3',alignContent:'center'}}>Welcome To Lucid </h3></Col>
+        <Col xl={3}></Col>
+        <Col  xl={1} style={{display:'flex' ,color:'#2a75b3'}}>
+        <ImLocation/> <h5>Loction</h5> 
+        </Col>
+        <Col  xl={1} style={{display:'flex' ,color:'#2a75b3',verticalAlign:'middle',justifyContent:""}}>
+        <MdCall  style={{paddingBottom:'0px 0px'}}/><h5>Contact Us</h5>
+        </Col>
+      </Row>
+      <Row className="mb-4 m-4" style={{ width: "100%" }}>
         <Col lg={8} className="shadow mt-1 card border-1">
           <h5 className="mb-3 mt-3">Information</h5>
           <Form className="mb-3 mt-3">
@@ -55,7 +68,7 @@ const Users = () => {
           </Card>
         </Col>
       </Row>
-      <Row className="mt-4" style={{ width: "100%",height:'420px'}}>
+      <Row className="m-4" style={{ width: "100%",height:'420px'}}>
         <Col lg={6} className="shadow mt-1 card border-1">
           <Carousel style={{ paddingTop:'10px'}}>
             <Carousel.Item  style={{ paddingBottom:'0px' }}>
@@ -109,7 +122,7 @@ const Users = () => {
         </Col>
       </Row>
       
-    </Container>
+  </>
   );
 };
 

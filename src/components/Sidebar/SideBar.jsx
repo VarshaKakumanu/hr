@@ -13,7 +13,7 @@ import SidebarMenu from "./SidebarMenu";
 const routes = [
   {
     path: "/",
-    name: "Dashboard",
+    name: "Home",
     icon: <FaHome />,
   },
   {
