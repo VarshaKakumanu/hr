@@ -5,17 +5,14 @@
 }
 
 .main-container {
- 
   display: flex;
   flex-wrap: nowrap;
   justify-content: left;
-  background-color: #f5f3f3;
+  background-color: #eef1ee;
   height: 100%;
   width: 100%;
- 
 }
 main {
-  
   width: 100%;
   overflow: scroll;
   height: 100vh;
@@ -32,11 +29,9 @@ main {
   background: #2a75b3;
   color: white;
   height: 100vh;
- 
- 
-  overflow:auto;
-  padding-right: 8px 0px ;
-  
+
+  overflow: auto;
+  padding-right: 8px 0px;
 }
 
 .top_section {
@@ -44,7 +39,6 @@ main {
   align-items: center;
   justify-content: space-between;
   padding: 15px 10px;
-  
 }
 .logo {
   font-size: 18px;
@@ -89,7 +83,7 @@ main {
 }
 .link:hover {
   border-right: 4px solid white;
-  background:  rgb(20, 79, 128);
+  background: rgb(20, 79, 128);
   transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
   color: #f2f4f6;
 }
@@ -126,37 +120,33 @@ main {
 a {
   text-decoration: none !important;
 }
-#sri{
-  min-width: 100% !important;
+#sri {
+  min-width: 90% !important;
   display: flex;
   flex-wrap: wrap;
   margin: 0px !important;
-  
 }
-#home{
+#home {
   background-image: url("./images/2.jpg");
 
-  
-  height: 80%; 
+  height: 80%;
 
-  
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #2a75b3;
 }
-.Col{
+.Col {
   flex: 100%;
 }
-@media  screen and (max-width: 480px){
-  .sidebar{
+@media screen and (max-width: 480px) {
+  .sidebar {
     width: 0px !important;
   }
-  .menu_container .link{
+  .menu_container .link {
     padding-left: 10px !important;
   }
-  .bars{
-    position:absolute;
+  .bars {
+    position: absolute;
   }
-  
 }

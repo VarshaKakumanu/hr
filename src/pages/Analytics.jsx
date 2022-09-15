@@ -1,5 +1,5 @@
 //import Page from 'components/Page';
-import React from 'react';
+import React from "react";
 import {
   Button,
   Card,
@@ -13,18 +13,18 @@ import {
   Input,
   Label,
   Row,
-} from 'reactstrap';
+} from "reactstrap";
 
 const Analytics = () => {
   return (
-    < Col >
+    <Col>
       <Row className="shadow card border-1">
-        <Col xl={5} >
+        <Col xl={5}>
           <Card>
             <CardHeader>Input Types</CardHeader>
             <CardBody>
               <Form>
-                <FormGroup >
+                <FormGroup>
                   <Label for="exampleEmail">Plain Text (Static)</Label>
                   <Input
                     plaintext
@@ -159,7 +159,7 @@ const Analytics = () => {
           </Card>
         </Col>
 
-        <Col xl={6} >
+        <Col xl={6}>
           <Card>
             <CardHeader>Form Grid</CardHeader>
             <CardBody>
@@ -274,7 +274,7 @@ const Analytics = () => {
       </Row>
 
       <Row className="shadow card border-1">
-        <Col xl={4} >
+        <Col xl={4}>
           <Card>
             <CardHeader>Form Validation</CardHeader>
             <CardBody>
@@ -285,15 +285,15 @@ const Analytics = () => {
                   <FormFeedback>
                     <a href="https://github.com/twbs/bootstrap/issues/23372">
                       A bug
-                    </a>{' '}
+                    </a>{" "}
                     fixed in (the currently unreleased) (
                     <a href="https://github.com/twbs/bootstrap/pull/23377">
                       PR
                     </a>
-                    ) bootstrap{' '}
+                    ) bootstrap{" "}
                     <a href="https://github.com/twbs/bootstrap/issues/23278">
                       v4 beta-2
-                    </a>{' '}
+                    </a>{" "}
                     shows invalid-feedback with is-valid inputs.
                   </FormFeedback>
                   <FormText>Example help text that remains unchanged.</FormText>
@@ -311,7 +311,7 @@ const Analytics = () => {
           </Card>
         </Col>
 
-        <Col xl={5} >
+        <Col xl={5}>
           <Card>
             <CardHeader>Hidden Labels</CardHeader>
             <CardBody>
@@ -321,7 +321,7 @@ const Analytics = () => {
                     Email
                   </Label>
                   <Input type="email" name="email" placeholder="Email" />
-                </FormGroup>{' '}
+                </FormGroup>{" "}
                 <FormGroup>
                   <Label for="examplePassword" hidden>
                     Password
@@ -331,16 +331,14 @@ const Analytics = () => {
                     name="password"
                     placeholder="Password"
                   />
-                </FormGroup>{' '}
+                </FormGroup>{" "}
                 <Button>Submit</Button>
               </Form>
             </CardBody>
           </Card>
         </Col>
       </Row>
-
-      
-  </Col>
+    </Col>
   );
 };
 

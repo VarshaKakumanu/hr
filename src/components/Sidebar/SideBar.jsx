@@ -28,7 +28,7 @@ const routes = [
   },
   {
     path: "/messages",
-    name: "Messages",
+    name: "Trainingas",
     icon: <MdMessage />,
   },
   {

@@ -3,7 +3,6 @@ import {
   Button,
   Card,
   Form,
-  Container,
   Row,
   Col,
   Carousel,ListGroup 
@@ -12,23 +11,26 @@ import pic1 from "../images/1.jpg";
 import pic2 from "../images/2.jpg";
 import pic3 from "../images/3.jpg";
 import {ImLocation } from "react-icons/im";
-import {MdCall } from "react-icons/md";
+import {IoMdCall } from "react-icons/io";
 //import "../App.css";
 const Users = () => {
+
+  
   return (
     <>
     
-      <Row  className="mb-4 m-4"  >
-        <Col xl={6} width><h3 style={{color:'#2a75b3',alignContent:'center'}}>Welcome To Lucid </h3></Col>
-        <Col xl={3}></Col>
-        <Col  xl={1} style={{display:'flex' ,color:'#2a75b3'}}>
-        <ImLocation/> <h5>Loction</h5> 
+      <Row  className=" mt-4 m-2
+      "  >
+        <Col lg={6} width><h3 style={{color:'#2a75b3',alignContent:'center'}}>Welcome To Lucid </h3></Col>
+        <Col lg={2}></Col>
+        <Col  sm xs={1} style={{display:'flex' ,color:'#2a75b3'}}>
+        <ImLocation style={{alignSelf:'center',color:'black'}}/><h5 style={{alignSelf:'center',paddingTop:'6px'}}>Loction</h5> 
         </Col>
-        <Col  xl={1} style={{display:'flex' ,color:'#2a75b3',verticalAlign:'middle',justifyContent:""}}>
-        <MdCall  style={{paddingBottom:'0px 0px'}}/><h5>Contact Us</h5>
+        <Col   lg sm xs={3} style={{display:'flex' ,color:'#2a75b3',verticalAlign:'middle',justifyContent:""}}>
+        <IoMdCall  style={{alignSelf:'center',color:'black'}}/><h5 style={{alignSelf:'center',paddingTop:'6px'}}>Contact Us</h5>
         </Col>
       </Row>
-      <Row className="mb-4 m-4" style={{ width: "100%" }}>
+      <Row className=" m-2 mt-4" style={{ width: "99%" }}>
         <Col lg={8} className="shadow mt-1 card border-1">
           <h5 className="mb-3 mt-3">Information</h5>
           <Form className="mb-3 mt-3">
@@ -52,9 +54,9 @@ const Users = () => {
             </Button>
           </Form>
         </Col>
-        <Col lg={1}></Col>
+        <Col ></Col>
 
-        <Col lg={3} className="shadow mr-4 card ">
+        <Col lg={3} className="shadow pr-1 card ">
           <Card>
             <Card.Img variant="top" src="holder.js/100px180" />
             <Card.Body>
@@ -68,7 +70,7 @@ const Users = () => {
           </Card>
         </Col>
       </Row>
-      <Row className="m-4" style={{ width: "100%",height:'420px'}}>
+      <Row className="m-2 mt-4" style={{ width: "99%",height:'420px'}}>
         <Col lg={6} className="shadow mt-1 card border-1">
           <Carousel style={{ paddingTop:'10px'}}>
             <Carousel.Item  style={{ paddingBottom:'0px' }}>
@@ -108,7 +110,8 @@ const Users = () => {
             </Carousel.Item>
           </Carousel>
         </Col>
-        <Col lg={6} style={{}} className="shadow mt-1  mr-4 card ">
+        <Col></Col>
+        <Col lg={5} style={{}} className="shadow mt-1  ml-4 card ">
         <ListGroup   style={{ height: "400px" }}>
       <ListGroup.Item>Cras justo odio</ListGroup.Item>
       <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>

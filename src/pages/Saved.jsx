@@ -1,5 +1,5 @@
-const Saved = () => {
-  return <div className="title"> Saved</div>;
-};
+function Saved() {
+    return <div className="title"> Saved</div>;
+}
 
 export default Saved;

@@ -1,19 +1,15 @@
-import React, {  useEffect } from "react";
-import {  Row, Col } from "react-bootstrap";
+import React, { useEffect } from "react";
+import { Row, Col } from "react-bootstrap";
 import axios from "axios";
-//import Table from "react-bootstrap/Table";
-//import {ImLocation } from "react-icons/im";
-//import { MdCall } from "react-icons/md";
 import pic1 from "../images/1.jpg";
 import pic2 from "../images/2.jpg";
 import pic3 from "../images/3.jpg";
-
+import ThemeProvider from "react-bootstrap/ThemeProvider";
 const Home = () => {
   //const [userData,setUserData ] = useState([]);
   const getusers = () => {
     axios.get("https://jsonplaceholder.typicode.com/todos/1").then((res) => {
       console.log("Result", res);
-      
     });
   };
   useEffect(() => {
@@ -21,8 +17,11 @@ const Home = () => {
   }, []);
 
   return (
-    <>
-      <Col id="home" className="pb-4 p-4" style={{ textAlign: "center" }}>
+    <ThemeProvider
+      breakpoints={["xxxl", "xxl", "xl", "lg", "md", "sm", "xs", "xxs"]}
+      minBreakpoint="xxs"
+    >
+      <Col id="home" className="pb-4 p-2" style={{ textAlign: "center" }}>
         <h1
           style={{
             color: "#fff",
@@ -31,7 +30,7 @@ const Home = () => {
             fontFamily: "Lora",
           }}
         >
-          Welcome To Lucid!{" "}
+          Welcome To Lucid!{""}
         </h1>
       </Col>
       <Row
@@ -68,9 +67,8 @@ const Home = () => {
       </Row>
       <Row
         className="m-2 shadow  card border-1"
-        style={{flexDirection:'row',paddingTop:'10px'}}
+        style={{ flexDirection: "row", paddingTop: "10px" }}
       >
-       
         <Col lg={4} className="shadow  card border-0">
           <img src={pic3} alt="card"></img>
         </Col>
@@ -84,7 +82,7 @@ const Home = () => {
         <hr style={{ marginTop: "20px" }}></hr>
         <p style={{ textAlign: "center" }}>@copy rights</p>
       </Row>
-    </>
+    </ThemeProvider>
   );
 };
 
