@@ -3,14 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-<<<<<<< HEAD
-    "@react-icons/all-files": "^4.1.0",
-    "@testing-library/jest-dom": "^5.16.1",
-    "@testing-library/react": "^12.1.2",
-    "@testing-library/user-event": "^13.5.0",
-=======
     "axios": "^0.27.2",
->>>>>>> 6cedfaca8cc9e00b6112055acda4b869dec492ee
     "bootstrap": "^5.2.0",
     "browser-update": "^3.3.40",
     "framer-motion": "^6.5.1",
@@ -20,7 +13,9 @@
     "react-icons": "^4.4.0",
     "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
+    "react-strap": "^0.0.1",
     "reactstrap": "^9.1.4",
+    "sass": "^1.54.9",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
