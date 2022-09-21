@@ -28,7 +28,7 @@ const routes = [
   },
   {
     path: "/messages",
-    name: "Trainingas",
+    name: "Trainings",
     icon: <MdMessage />,
   },
   {
@@ -38,12 +38,12 @@ const routes = [
   },
   {
     path: "/file-manager",
-    name: "Services",
+    name: "Course Content",
     icon: <AiTwotoneFileExclamation />,
     subRoutes: [
       {
-        path: "/settings/profile",
-        name: "Project Support ",
+        path: "/Webdev",
+        name: "WEBdevelopment",
         icon: <FaUser />,
       },
       {

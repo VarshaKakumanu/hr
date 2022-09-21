@@ -19,8 +19,8 @@ const Users = () => {
   return (
     <>
     
-      <Row  className=" mt-4 m-2
-      "  >
+      <Row  className=" mt-4 m-4
+      " style={{ width: "97%" }} >
         <Col lg={6} width><h3 style={{color:'#2a75b3',alignContent:'center'}}>Welcome To Lucid </h3></Col>
         <Col lg={2}></Col>
         <Col  sm xs={1} style={{display:'flex' ,color:'#2a75b3'}}>
@@ -30,7 +30,7 @@ const Users = () => {
         <IoMdCall  style={{alignSelf:'center',color:'black'}}/><h5 style={{alignSelf:'center',paddingTop:'6px'}}>Contact Us</h5>
         </Col>
       </Row>
-      <Row className=" m-2 mt-4" style={{ width: "99%" }}>
+      <Row className=" m-4 mt-4" style={{ width: "97%" }}>
         <Col lg={8} className="shadow mt-1 card border-1">
           <h5 className="mb-3 mt-3">Information</h5>
           <Form className="mb-3 mt-3">
@@ -70,7 +70,7 @@ const Users = () => {
           </Card>
         </Col>
       </Row>
-      <Row className="m-2 mt-4" style={{ width: "99%",height:'420px'}}>
+      <Row className="m-4 mt-4" style={{ width: "97%",height:'420px'}}>
         <Col lg={6} className="shadow mt-1 card border-1">
           <Carousel style={{ paddingTop:'10px'}}>
             <Carousel.Item  style={{ paddingBottom:'0px' }}>

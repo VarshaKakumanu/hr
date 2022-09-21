@@ -4,16 +4,16 @@ import axios from "axios";
 import { motion } from "framer-motion";
 //import Table from "react-bootstrap/Table";
 
-import { ImLocation } from "react-icons/im";
-import { MdCall } from "react-icons/md";
-import pic1 from "../images/1.jpg";
-import pic2 from "../images/2.jpg";
-import pic3 from "../images/3.jpg";
-import pic4 from "../images/4.jpg";
-import pic5 from "../images/5.jpg";
-import pic6 from "../images/6.jpg";
+// import { ImLocation } from "react-icons/im";
+// import { MdCall } from "react-icons/md";
+// import pic1 from "../images/1.jpg";
+// import pic2 from "../images/2.jpg";
+// import pic3 from "../images/3.jpg";
+// import pic4 from "../images/4.jpg";
+// import pic5 from "../images/5.jpg";
+// import pic6 from "../images/6.jpg";
 import png7 from "../images/7.png";
-import { BiLeftArrow } from "react-icons/bi";
+//import { BiLeftArrow } from "react-icons/bi";
 const Home = () => {
   //const [userData,setUserData ] = useState([]);
   const getusers = () => {
@@ -230,7 +230,7 @@ const Home = () => {
           }}
         >
           Contact Us
-        </h2>
+        </h2>E
         <br></br>
         <Container className="d-flex justify-content-around">
           <p

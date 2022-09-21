@@ -12,6 +12,7 @@ import Order from "./pages/Order";
 import Saved from "./pages/Saved";
 import Setting from "./pages/Setting";
 import LoginPage from "./pages/login/LoginPage";
+import Webdev from "./pages/Webdev";
 import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path="/order" element={<Order />} />
           <Route path="/saved" element={<Saved />} />
           <Route path="/settings" element={<Setting />} />
+          <Route path="/Webdev" element={<Webdev />} />
           <Route path="/LoginPage" element={<LoginPage />} />
 
           <Route path="*" element={<> not found</>} />
