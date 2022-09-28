@@ -1,5 +1,6 @@
 import "./App.css";
 import SideBar from "./components/Sidebar/SideBar";
+import MyForm from "./components/MyForm";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import Home from "./pages/Home";
@@ -12,7 +13,8 @@ import Order from "./pages/Order";
 import Saved from "./pages/Saved";
 import Setting from "./pages/Setting";
 import LoginPage from "./pages/login/LoginPage";
-import Webdev from "./pages/Webdev";
+import Webdev from "./pages/Course/Webdev";
+import Rpa from "./pages/Course/Rpa";
 import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
@@ -29,7 +31,9 @@ function App() {
           <Route path="/saved" element={<Saved />} />
           <Route path="/settings" element={<Setting />} />
           <Route path="/Webdev" element={<Webdev />} />
+          <Route path="/Rpa" element={<Rpa />} />
           <Route path="/LoginPage" element={<LoginPage />} />
+          <Route path="/MyForm" element={<MyForm />} />
 
           <Route path="*" element={<> not found</>} />
         </Routes>

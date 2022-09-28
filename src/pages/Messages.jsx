@@ -21,6 +21,11 @@ function Messages() {
     let path ="/Webdev"; 
     navigate(path);
   }
+  const Rpa = () =>{ 
+    let path ="/Rpa"; 
+    navigate(path);
+  }
+  
   return (
     <>
       <Row
@@ -54,7 +59,7 @@ function Messages() {
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </Card.Text>
-              <Button variant="primary">Course Content</Button>
+              <Button variant="primary" onClick={Rpa}>Course Content</Button>
             </Card.Body>
           </Card>
         </Col>

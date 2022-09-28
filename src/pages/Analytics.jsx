@@ -1,13 +1,9 @@
 //import Page from 'components/Page';
 import React from "react";
 import {
-  Button,
-  Card,
-  CardBody,
-  CardHeader,
+ 
   Col,
   Form,
-  FormFeedback,
   FormGroup,
   FormText,
   Input,
@@ -18,17 +14,15 @@ import {
 const Analytics = () => {
   return (
     <Col>
-      <Row className="shadow card border-1">
+      <Row className="shadow box border-1">
         <Col xl={5}>
-          <Card>
-            <CardHeader>Input Types</CardHeader>
-            <CardBody>
+          
               <Form>
                 <FormGroup>
                   <Label for="exampleEmail">Plain Text (Static)</Label>
                   <Input
                     plaintext
-                    value="Some plain text/ static value"
+                    value=""
                     readOnly
                   />
                 </FormGroup>
@@ -155,189 +149,12 @@ const Analytics = () => {
                   </Label>
                 </FormGroup>
               </Form>
-            </CardBody>
-          </Card>
+            
         </Col>
 
-        <Col xl={6}>
-          <Card>
-            <CardHeader>Form Grid</CardHeader>
-            <CardBody>
-              <Form>
-                <FormGroup row>
-                  <Label for="exampleEmail" sm={2}>
-                    Email
-                  </Label>
-                  <Col sm={10}>
-                    <Input
-                      type="email"
-                      name="email"
-                      placeholder="with a placeholder"
-                    />
-                  </Col>
-                </FormGroup>
-                <FormGroup row>
-                  <Label for="examplePassword" sm={2}>
-                    Password
-                  </Label>
-                  <Col sm={10}>
-                    <Input
-                      type="password"
-                      name="password"
-                      placeholder="password placeholder"
-                    />
-                  </Col>
-                </FormGroup>
-                <FormGroup row>
-                  <Label for="exampleSelect" sm={2}>
-                    Select
-                  </Label>
-                  <Col sm={10}>
-                    <Input type="select" name="select" />
-                  </Col>
-                </FormGroup>
-                <FormGroup row>
-                  <Label for="exampleSelectMulti" sm={2}>
-                    Select Multiple
-                  </Label>
-                  <Col sm={10}>
-                    <Input type="select" name="selectMulti" multiple />
-                  </Col>
-                </FormGroup>
-                <FormGroup row>
-                  <Label for="exampleText" sm={2}>
-                    Text Area
-                  </Label>
-                  <Col sm={10}>
-                    <Input type="textarea" name="text" />
-                  </Col>
-                </FormGroup>
-                <FormGroup row>
-                  <Label for="exampleFile" sm={2}>
-                    File
-                  </Label>
-                  <Col sm={10}>
-                    <Input type="file" name="file" />
-                    <FormText color="muted">
-                      This is some placeholder block-level help text for the
-                      above input. It's a bit lighter and easily wraps to a new
-                      line.
-                    </FormText>
-                  </Col>
-                </FormGroup>
-                <FormGroup tag="fieldset" row>
-                  <Label for="checkbox2" sm={2}>
-                    Radio
-                  </Label>
-                  <Col sm={10}>
-                    <FormGroup check>
-                      <Label check>
-                        <Input type="radio" name="radio2" /> Option one is this
-                        and that—be sure to include why it's great
-                      </Label>
-                    </FormGroup>
-                    <FormGroup check>
-                      <Label check>
-                        <Input type="radio" name="radio2" /> Option two can be
-                        something else and selecting it will deselect option one
-                      </Label>
-                    </FormGroup>
-                    <FormGroup check disabled>
-                      <Label check>
-                        <Input type="radio" name="radio2" disabled /> Option
-                        three is disabled
-                      </Label>
-                    </FormGroup>
-                  </Col>
-                </FormGroup>
-                <FormGroup row>
-                  <Label for="checkbox2" sm={2}>
-                    Checkbox
-                  </Label>
-                  <Col sm={{ size: 10 }}>
-                    <FormGroup check>
-                      <Label check>
-                        <Input type="checkbox" id="checkbox2" /> Check me out
-                      </Label>
-                    </FormGroup>
-                  </Col>
-                </FormGroup>
-                <FormGroup check row>
-                  <Col sm={{ size: 10, offset: 2 }}>
-                    <Button>Submit</Button>
-                  </Col>
-                </FormGroup>
-              </Form>
-            </CardBody>
-          </Card>
-        </Col>
       </Row>
 
-      <Row className="shadow card border-1">
-        <Col xl={4}>
-          <Card>
-            <CardHeader>Form Validation</CardHeader>
-            <CardBody>
-              <Form>
-                <FormGroup>
-                  <Label for="exampleEmail">Input with success</Label>
-                  <Input valid />
-                  <FormFeedback>
-                    <a href="https://github.com/twbs/bootstrap/issues/23372">
-                      A bug
-                    </a>{" "}
-                    fixed in (the currently unreleased) (
-                    <a href="https://github.com/twbs/bootstrap/pull/23377">
-                      PR
-                    </a>
-                    ) bootstrap{" "}
-                    <a href="https://github.com/twbs/bootstrap/issues/23278">
-                      v4 beta-2
-                    </a>{" "}
-                    shows invalid-feedback with is-valid inputs.
-                  </FormFeedback>
-                  <FormText>Example help text that remains unchanged.</FormText>
-                </FormGroup>
-                <FormGroup>
-                  <Label for="examplePassword">Input with danger</Label>
-                  <Input valid={false} />
-                  <FormFeedback>
-                    Oh noes! that name is already taken
-                  </FormFeedback>
-                  <FormText>Example help text that remains unchanged.</FormText>
-                </FormGroup>
-              </Form>
-            </CardBody>
-          </Card>
-        </Col>
-
-        <Col xl={5}>
-          <Card>
-            <CardHeader>Hidden Labels</CardHeader>
-            <CardBody>
-              <Form inline>
-                <FormGroup>
-                  <Label for="exampleEmail" hidden>
-                    Email
-                  </Label>
-                  <Input type="email" name="email" placeholder="Email" />
-                </FormGroup>{" "}
-                <FormGroup>
-                  <Label for="examplePassword" hidden>
-                    Password
-                  </Label>
-                  <Input
-                    type="password"
-                    name="password"
-                    placeholder="Password"
-                  />
-                </FormGroup>{" "}
-                <Button>Submit</Button>
-              </Form>
-            </CardBody>
-          </Card>
-        </Col>
-      </Row>
+     
     </Col>
   );
 };

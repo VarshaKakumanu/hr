@@ -47,7 +47,7 @@ const routes = [
         icon: <FaUser />,
       },
       {
-        path: "/settings/2fa",
+        path: "/Rpa",
         name: "Design&Development",
         icon: <FaLock />,
       },
@@ -92,7 +92,7 @@ const routes = [
     icon: <AiFillHeart />,
   },
   {
-    path: "/LoginPage",
+    path: "/MyForm",
     name: "Login",
     icon: <AiOutlineLock />,
   }
