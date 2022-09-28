@@ -1,7 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 //import axios from "axios";
 import { motion } from "framer-motion";
+//import { useHistory, useParams, LinK } from "react-router-dom";
+import axios from "axios";
+import useHistory, { Link } from "use-history";
 //import Table from "react-bootstrap/Table";
 
 //import { ImLocation } from "react-icons/im";
@@ -15,40 +18,52 @@ import pic6 from "../images/6.jpg";
 import png7 from "../images/7.png";
 import { useForm } from "react-hook-form";
 //import { BiLeftArrow } from "react-icons/bi";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+const initialState = {
+  name: "",
+  email: "",
+  phoneNo: "",
+  query: "",
+};
+
 const Home = () => {
-  const [data, setData] = useState({
-    name: "",
-    email: "",
-    phoneNo: "",
-    query: "",
-  });
-  const { name, email, phoneNo, query } = data;
+  const [state, setState] = useState(initialState);
+  const { name, email, phoneNo, query } = state;
+  //const history = useHistory();
   const changeHandler = (e) => {
-    setData({ ...data, [e.target.name]: [e.target.value] });
+    setState({ ...state, [e.target.name]: [e.target.value] });
   };
-  
-  const submithandler = (e) => {
-    e.preventDefault();
-    console.log(data);
 
-    if (name.length === 0) {
-      alert("Name has left black!");
-    } else if (email.length === 0) {
-      alert("email has left black!");
-    } else if (phoneNo.length === 0) {
-      alert("phoneNo has left black!");
-    } else if (query.length === 0) {
-      alert("query has left black!");
+  const handleSubmit = (e) => {
+    console.log(state);
+
+    if (!name || !email || !phoneNo || !query) {
+      
     } else {
-      alert("submited Successfully");
+      
+      axios
+        .post("http://localhost:5000/api/post", {
+          name,
+          email,
+          phoneNo,
+          query,
+        })
+        .then(() => {
+          setState({ name: "", email: "", phoneNo: "", query: "" });
+        })
+        .catch((err) => toast.error(err.response.data));
+      toast.success("Details Submited Successfully ",{
+        position: toast.POSITION.TOP_RIGHT
+    });
+    alert("Details Submited Successfully")
     }
-
-    e.target.reset();
   };
 
   return (
     <>
-      <Row>
+      <Row  style={{width:'97%'}}>
         <Col
           id="home"
           className="md-auto pb-5 p-5"
@@ -77,7 +92,7 @@ const Home = () => {
           </h2>
         </Col>
       </Row>
-      <Row>
+      <Row  style={{width:'97%'}}>
         <Col
           id="about"
           className="md-auto pb-4 p-4 "
@@ -107,7 +122,7 @@ const Home = () => {
         </Col>
       </Row>
 
-      <Container className=" ">
+      <Container  style={{width:'97%'}} className=" ">
         <Row>
           <Col xl lg sm={6} className="d-flex justify-content-around">
             <img
@@ -241,21 +256,22 @@ const Home = () => {
         </Row>
       </Container>
 
-      <Row>
+      <Row  style={{width:'97%'}}>
         <Col xl lg sm={6}>
           <img src={pic6} class="img-thumbnail" alt="..."></img>
         </Col>
         <Col xl lg sm={6}>
           <Container>
-            <Form onSubmit={submithandler}>
+            <Form onSubmit={handleSubmit}>
               <Form.Group className="mb-3" controlId="">
                 <Form.Label>Name</Form.Label>
                 <Form.Control
                   type="text"
                   name="name"
+                  id="name"
                   value={name}
                   onChange={changeHandler}
-                  placeholder="Enter Name"
+                  placeholder="Enter  Your Name"
                   required
                 />
 
@@ -263,6 +279,7 @@ const Home = () => {
                 <Form.Control
                   type="email"
                   name="email"
+                  id="email"
                   value={email}
                   onChange={changeHandler}
                   placeholder="Enter email"
@@ -277,6 +294,7 @@ const Home = () => {
                 <Form.Control
                   type="number"
                   value={phoneNo}
+                  id="phoneNo"
                   onChange={changeHandler}
                   name="phoneNo"
                   placeholder="Enter phone no."
@@ -287,8 +305,9 @@ const Home = () => {
               <Form.Group className="mb-3" controlId="l">
                 <Form.Label>write to us here</Form.Label>
                 <Form.Control
-                  type="text"
+                  type="textarea"
                   name="query"
+                  id="query"
                   value={query}
                   onChange={changeHandler}
                   placeholder="Enter you query"
@@ -297,9 +316,9 @@ const Home = () => {
               </Form.Group>
 
               <Button
-                onClick={() => console.log("clicked")}
                 name="submit"
                 variant="primary"
+                value="save"
                 type="submit"
                 className="justify-item-center"
               >
@@ -310,7 +329,7 @@ const Home = () => {
         </Col>
       </Row>
 
-      <Col id="about" className=" " style={{ textAlign: "center" }}>
+      <Col id="about" className=" " style={{ textAlign: "center",width:'97%' }}>
         <h2
           style={{
             color: "black",
@@ -344,6 +363,7 @@ const Home = () => {
             Phone No:878989XXX
           </p>{" "}
         </Container>
+        <ToastContainer/>
       </Col>
     </>
   );

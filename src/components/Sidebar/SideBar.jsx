@@ -92,7 +92,7 @@ const routes = [
     icon: <AiFillHeart />,
   },
   {
-    path: "/MyForm",
+    path: "/",
     name: "Login",
     icon: <AiOutlineLock />,
   }
