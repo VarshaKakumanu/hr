@@ -31,7 +31,7 @@ function Messages() {
       <Row
         style={{ textAlign: "center", color: "#2a75b3", marginTop: "100px", width: "97%" }}
       >
-        <h1> Available Trainings</h1>
+        <h1> Activities</h1>
       </Row>
       <Row
         style={{ display: "flex", width: "97%", marginTop: "100px" }}
@@ -46,7 +46,7 @@ function Messages() {
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </Card.Text>
-              <Button variant="primary"  onClick={routeChange}>Course Content</Button>
+              <Button variant="primary"  onClick={routeChange}>View Activity</Button>
             </Card.Body>
           </Card>
         </Col>
@@ -59,7 +59,7 @@ function Messages() {
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </Card.Text>
-              <Button variant="primary" onClick={Rpa}>Course Content</Button>
+              <Button variant="primary" onClick={Rpa}>View Activity</Button>
             </Card.Body>
           </Card>
         </Col>
@@ -72,7 +72,7 @@ function Messages() {
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </Card.Text>
-              <Button variant="primary">Course Content</Button>
+              <Button variant="primary">View Activity</Button>
             </Card.Body>
           </Card>
         </Col>
@@ -87,7 +87,7 @@ function Messages() {
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </Card.Text>
-              <Button variant="primary">Course Content</Button>
+              <Button variant="primary">View Activity</Button>
             </Card.Body>
           </Card>
         </Col>
@@ -100,7 +100,7 @@ function Messages() {
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </Card.Text>
-              <Button variant="primary">Course Content</Button>
+              <Button variant="primary">View Activity</Button>
             </Card.Body>
           </Card>
         </Col>
@@ -113,7 +113,7 @@ function Messages() {
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </Card.Text>
-              <Button variant="primary">Course Content</Button>
+              <Button variant="primary">View Activity</Button>
             </Card.Body>
           </Card>
         </Col>
@@ -128,7 +128,7 @@ function Messages() {
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </Card.Text>
-              <Button variant="primary">Course Content</Button>
+              <Button variant="primary">View Activity</Button>
             </Card.Body>
           </Card>
         </Col>

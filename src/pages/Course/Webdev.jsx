@@ -27,14 +27,15 @@ class Webdev extends Component {
           >
             <h2>
               {" "}
-              WEBdevelopment Syllabus - What you will learn from this course
+              {/* WEBdevelopment Syllabus - What you will learn from this course */}
+              WEBdevelopment
             </h2>
           </Row>
           <Row
             className=" m-2 mt-4"
             style={{ width: "97%", fontFamily: "monospace" }}
           >
-            <Accordion defaultActiveKey="">
+            <Accordion defaultActiveKey="4">
               <Accordion.Item eventKey="0">
                 <Accordion.Header>
                   <img style={{ height: "30px" }} src={html} alt="html" />
@@ -205,7 +206,7 @@ class Webdev extends Component {
               </Accordion.Item>
             </Accordion>
           </Row>
-          <Row
+          {/* <Row
             className=" m-2 mt-4"
             style={{ width: "97%", fontFamily: "monospace" }}
           >
@@ -246,7 +247,7 @@ class Webdev extends Component {
                 </Card.Body>
               </Card>
             </Col>
-          </Row>
+          </Row> */}
         </>
       </>
     );

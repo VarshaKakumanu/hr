@@ -12,12 +12,12 @@ import SidebarMenu from "./SidebarMenu";
 //import pic from "./iv.png";
 const routes = [
   {
-    path: "/",
-    name: "Home",
+    path: "/Dashbord",
+    name: "Dashbord",
     icon: <FaHome />,
   },
   {
-    path: "/iveond",
+    path: "/",
     name: "Iveond",
     icon: <ImOffice/>,
   },
@@ -28,17 +28,17 @@ const routes = [
   },
   {
     path: "/messages",
-    name: "Trainings",
+    name: "Teams",
     icon: <MdMessage />,
   },
   {
     path: "/analytics",
-    name: "Analytics",
+    name: "Profile Update",
     icon: <BiAnalyse />,
   },
   {
     path: "/file-manager",
-    name: "Course Content",
+    name: "Activities",
     icon: <AiTwotoneFileExclamation />,
     subRoutes: [
       {
@@ -48,12 +48,12 @@ const routes = [
       },
       {
         path: "/Rpa",
-        name: "Design&Development",
+        name: "Rpa",
         icon: <FaLock />,
       },
       {
-        path: "/settings/billing",
-        name: "IT Trainimg",
+        path: "/messages",
+        name: "Digital Marketing",
         icon: <FaMoneyBill />,
       },
     ],
@@ -92,7 +92,7 @@ const routes = [
     icon: <AiFillHeart />,
   },
   {
-    path: "/",
+    path: "/LoginPage",
     name: "Login",
     icon: <AiOutlineLock />,
   }
@@ -161,7 +161,7 @@ const SideBar = ({ children }) => {
                   className="logo"
                 >
                  {/* <img style={{height:"35px"}} src={pic} alt="iveond"/> */}
-                 <h5>LUCID</h5>
+                 <h5>IVEOND</h5>
                 </motion.h1>
               )}
             </AnimatePresence>

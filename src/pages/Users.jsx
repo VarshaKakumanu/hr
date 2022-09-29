@@ -21,7 +21,7 @@ const Users = () => {
     
       <Row  className=" mt-4 m-4
       " style={{ width: "97%" }} >
-        <Col lg={6} width><h3 style={{color:'#2a75b3',alignContent:'center'}}>Welcome To Lucid </h3></Col>
+        <Col lg={6} width><h3 style={{color:'#2a75b3',alignContent:'center'}}>Welcome To Iveond </h3></Col>
         <Col lg={2}></Col>
         <Col  sm xs={1} style={{display:'flex' ,color:'#2a75b3'}}>
         <ImLocation style={{alignSelf:'center',color:'black'}}/><h5 style={{alignSelf:'center',paddingTop:'6px'}}>Loction</h5> 

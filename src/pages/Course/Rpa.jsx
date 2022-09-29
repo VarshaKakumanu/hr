@@ -25,7 +25,8 @@ class Rpa extends Component {
               fontFamily: "cursive",
             }}
           >
-            <h2> RPA Syllabus - What you will learn from this course</h2>
+            {/* <h2> RPA Syllabus - What you will learn from this course</h2> */}
+           <h1> RPA</h1>
           </Row>
           <Row>
             <Col>
@@ -39,7 +40,7 @@ class Rpa extends Component {
                 style={{ width: "97%", fontFamily: "monospace" }}
               >
                 <p className="mb-0">6 sections 7rs to complete</p>
-                <Accordion defaultActiveKey="">
+                <Accordion defaultActiveKey="3">
                   <Accordion.Item eventKey="0">
                     <Accordion.Header>
                       {/* <img style={{ height: "30px" }} src={html} alt="html" /> */}
@@ -223,7 +224,7 @@ class Rpa extends Component {
                 style={{ width: "97%", fontFamily: "monospace" }}
               >
                 <p className="mb-0">11 sections 10rs to complete</p>
-                <Accordion defaultActiveKey="">
+                <Accordion defaultActiveKey="4">
                   <Accordion.Item eventKey="0">
                     <Accordion.Header>
                       {/* <img style={{ height: "30px" }} src={html} alt="html" /> */}
@@ -537,7 +538,7 @@ class Rpa extends Component {
               </Row>
             </Col>
           </Row>
-          <Row
+          {/* <Row
             className=" m-4"
             style={{ width: "97%", fontFamily: "monospace" }}
           >
@@ -577,7 +578,7 @@ class Rpa extends Component {
                 </Card.Body>
               </Card>
             </Col>
-          </Row>
+          </Row> */}
         </>
       </>
     );

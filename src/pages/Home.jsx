@@ -60,7 +60,7 @@ const Home = () => {
 
   return (
     <>
-      <Row style={{ width: "97%" }}>
+      {/* <Row style={{ width: "97%" }}>
         <Col
           id="home"
           className="md-auto pb-5 p-5"
@@ -251,13 +251,13 @@ const Home = () => {
             ></img>
           </Col>
         </Row>
-      </Container>
+      </Container> */}
 
-      <Row style={{ width: "97%" }}>
+      <Row style={{ width: "97%" }} className="m-4 p-4">
         <Col xl lg sm={6}>
           <img src={pic6} class="img-thumbnail" alt="..."></img>
         </Col>
-        <Col xl lg sm={6}>
+        <Col xl lg sm={6} className="shadow p-4" style={{backgroundColor:'#ffff'}}>
           <Container>
             <Form onSubmit={handleSubmit}>
               <Form.Group className="mb-3" controlId="">
@@ -326,46 +326,7 @@ const Home = () => {
         </Col>
       </Row>
 
-      <Col
-        id="about"
-        className=" "
-        style={{ textAlign: "center", width: "97%" }}
-      >
-        <h2
-          style={{
-            color: "black",
-            paddingTop: "40px",
-            fontSize: "80px",
-            fontFamily: "Lora",
-          }}
-        >
-          Contact Us
-        </h2>
-        <br></br>
-        <Container className="d-flex justify-content-around">
-          <p
-            style={{
-              color: "black",
-              paddingTop: "0px",
-              fontSize: "20px",
-              fontFamily: "Lora",
-            }}
-          >
-            Email : xyz@gmail.com
-          </p>
-          <p
-            style={{
-              color: "black",
-              paddingTop: "0px",
-              fontSize: "20px",
-              fontFamily: "Lora",
-            }}
-          >
-            Phone No:878989XXX
-          </p>{" "}
-        </Container>
-        <ToastContainer />
-      </Col>
+      
     </>
   );
 };

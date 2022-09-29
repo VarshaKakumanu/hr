@@ -19,6 +19,10 @@ import Rpa from "./pages/Course/Rpa";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Dashbord from "./iveond/Dashbord";
+
+
+
 function App() {
   return (
     <>
@@ -43,6 +47,10 @@ function App() {
           <Route path="/LoginPage" element={<LoginPage />} />
           <Route path="/data" element={<MyForm />} />
           <Route path="/View/:id" element={<View />} />
+
+          <Route path="/Dashbord" element={<Dashbord />} />
+          <Route path="/LoginPage" element={<LoginPage />} />
+          
           <Route path="*" element={<> not found</>} />
         </Routes>
       </SideBar>

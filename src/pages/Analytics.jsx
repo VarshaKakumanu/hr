@@ -11,11 +11,11 @@ import {
   Row,
 } from "reactstrap";
 
-const Analytics = () => {
+const Analytics = () => { 
   return (
-    <Col>
+    <Col className="m-4 p-3">
       <Row className="shadow box border-1">
-        <Col xl={5}>
+        <Col xl={12} className="p-4 " style={{backgroundColor:"#ffff"}}>
           
               <Form>
                 <FormGroup>
