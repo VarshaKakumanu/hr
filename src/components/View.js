@@ -31,16 +31,15 @@ const View = () => {
           <tbody>
             <tr>
               <td>{id}</td>
-              <td>{user.name}</td> 
+              <td>{user.name}</td>
               <td>{user.phoneNo}</td>
               <td>{user.email}</td>
               <td>{user.query}</td>
             </tr>
           </tbody>
         </table>
-        <Link  to="/data">
+        <Link to="/data">
           <button className="btn btn-warning"> Go Back</button>
-
         </Link>
       </Row>
     </Container>

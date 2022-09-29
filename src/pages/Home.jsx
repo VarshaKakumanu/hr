@@ -6,7 +6,6 @@ import { motion } from "framer-motion";
 import axios from "axios";
 import useHistory, { Link } from "use-history";
 //import Table from "react-bootstrap/Table";
-
 //import { ImLocation } from "react-icons/im";
 // import { MdCall } from "react-icons/md";
 // import pic1 from "../images/1.jpg";
@@ -18,8 +17,8 @@ import pic6 from "../images/6.jpg";
 import png7 from "../images/7.png";
 import { useForm } from "react-hook-form";
 //import { BiLeftArrow } from "react-icons/bi";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const initialState = {
   name: "",
@@ -40,9 +39,7 @@ const Home = () => {
     console.log(state);
 
     if (!name || !email || !phoneNo || !query) {
-      
     } else {
-      
       axios
         .post("http://localhost:5000/api/post", {
           name,
@@ -54,16 +51,16 @@ const Home = () => {
           setState({ name: "", email: "", phoneNo: "", query: "" });
         })
         .catch((err) => toast.error(err.response.data));
-      toast.success("Details Submited Successfully ",{
-        position: toast.POSITION.TOP_RIGHT
-    });
-    alert("Details Submited Successfully")
+      toast.success("Details Submited Successfully ", {
+        position: toast.POSITION.TOP_RIGHT,
+      });
+      alert("Details Submited Successfully");
     }
   };
 
   return (
     <>
-      <Row  style={{width:'97%'}}>
+      <Row style={{ width: "97%" }}>
         <Col
           id="home"
           className="md-auto pb-5 p-5"
@@ -92,7 +89,7 @@ const Home = () => {
           </h2>
         </Col>
       </Row>
-      <Row  style={{width:'97%'}}>
+      <Row style={{ width: "97%" }}>
         <Col
           id="about"
           className="md-auto pb-4 p-4 "
@@ -122,7 +119,7 @@ const Home = () => {
         </Col>
       </Row>
 
-      <Container  style={{width:'97%'}} className=" ">
+      <Container style={{ width: "97%" }} className=" ">
         <Row>
           <Col xl lg sm={6} className="d-flex justify-content-around">
             <img
@@ -256,7 +253,7 @@ const Home = () => {
         </Row>
       </Container>
 
-      <Row  style={{width:'97%'}}>
+      <Row style={{ width: "97%" }}>
         <Col xl lg sm={6}>
           <img src={pic6} class="img-thumbnail" alt="..."></img>
         </Col>
@@ -329,7 +326,11 @@ const Home = () => {
         </Col>
       </Row>
 
-      <Col id="about" className=" " style={{ textAlign: "center",width:'97%' }}>
+      <Col
+        id="about"
+        className=" "
+        style={{ textAlign: "center", width: "97%" }}
+      >
         <h2
           style={{
             color: "black",
@@ -363,7 +364,7 @@ const Home = () => {
             Phone No:878989XXX
           </p>{" "}
         </Container>
-        <ToastContainer/>
+        <ToastContainer />
       </Col>
     </>
   );
