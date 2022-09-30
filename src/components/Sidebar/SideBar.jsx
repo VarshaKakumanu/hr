@@ -17,7 +17,7 @@ const routes = [
     icon: <FaHome />,
   },
   {
-    path: "/",
+    path: "/info1",
     name: "Iveond",
     icon: <ImOffice/>,
   },

@@ -11,12 +11,12 @@ import {
 } from "reactstrap";
 import boy from "./boy.png";
 import png from "./png.png";
-
+import { Link } from "react-router-dom";
 const LoginPage = () => {
   return (
     <div>
       <Container>
-        <Row className="m-4 shadow p-4" style={{ height: "500px", backgroundColor: "white"  }}>
+        <Row className=" shadow p-4" style={{ height: "500px", backgroundColor: "white",marginTop:'100px' }}>
         <Col xl lg xxl={3} className=" ">
             <img  style={{height:'450px',width:'300px'}} src={png} alt=""/>
           </Col>
@@ -48,12 +48,16 @@ const LoginPage = () => {
               </FormGroup>
             </Form></Row>
             <Row style={{alignItem:'center'}}>
+              <Link to="/Dashbord">
               <button className="btn btn-warning m-3" style={{width:'80px'}}>Login</button>
+              </Link>
             </Row>
             <hr className="mt-4"></hr>
             
             <Row style={{textAlign:'center'}}>
+              <Link to="/Logining">
               <h5>Or Login With Gmail</h5>
+              </Link>
 
             </Row>
           </Col>
@@ -62,6 +66,15 @@ const LoginPage = () => {
           </Col>
         </Row>
       </Container>
+     <Container>
+     <Row className="shadow m-4" style={{backgroundColor:"white",height:'300px',justifyItems:'space-around'}}>
+      <Col xl={1} style={{backgroundColor:"black",}}>1</Col>
+      <Col xl={3} style={{backgroundColor:"white",}}>3</Col>
+      <Col xl={5} style={{backgroundColor:"black",}}>5</Col>
+      <Col xl={1} style={{backgroundColor:"white",}}>1</Col>
+      <Col xl={2} style={{backgroundColor:"black",}}>2</Col>
+     </Row>
+     </Container>
     </div>
   );
 };
