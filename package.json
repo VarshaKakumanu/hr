@@ -21,6 +21,7 @@
     "react-strap": "^0.0.1",
     "react-toastify": "^9.0.8",
     "reactstrap": "^9.1.4",
+    "redux-devtools-extension": "^2.13.9",
     "sass": "^1.54.9",
     "use-history": "^1.4.1",
     "useparams": "^0.0.2",
