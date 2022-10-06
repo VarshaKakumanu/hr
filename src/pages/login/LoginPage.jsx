@@ -84,8 +84,7 @@ const LoginPage = () => {
                     </Link>
                   </Row>
                 </Row>
-              </Tab>
-              <Tab eventKey="Registration" title="Registration">
+              </Tab><Tab eventKey="Registration" title="Registration">
                 <Row>
                   <Row>
                     <h3>Register</h3>
@@ -145,6 +144,8 @@ const LoginPage = () => {
                   </Row>
                 </Row>
               </Tab>
+              
+              
             </Tabs>
           </Col>
           <Col xl lg xxl={3} className=" ">

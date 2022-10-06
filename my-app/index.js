@@ -181,4 +181,4 @@ app.get('/myprofile',middleware,async(req,res)=>{
 
 
 
- app.listen(5000,()=>console.log('server runnnimg'));
+ app.listen(5000,()=>console.log('Server runnnimg...'));

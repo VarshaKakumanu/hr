@@ -36,7 +36,7 @@ function App() {
       
         <Routes>
           
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<LoginPage />} />
           <Route path="/iveond" element={<Iveond />} />
           <Route path="/users" element={<Users />} />
           <Route path="/messages" element={<Messages />} />
