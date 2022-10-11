@@ -14,7 +14,18 @@ import png from "./png.png";
 import { Link } from "react-router-dom";
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
+import { useState } from "react";
 const LoginPage = () => {
+  const [data, setData] = useState({
+    username: "",
+    email: "",
+    password: "",
+    confirmpassword: "",
+  });
+  const handleChange = (e) =>{
+    setState({ ...state, [e.target.name]: [e.target.value] });
+
+  }
   return (
     <div>
       <Container>
@@ -36,11 +47,7 @@ const LoginPage = () => {
             className=" p-2 "
             style={{ backgroundColor: "white" }}
           >
-            <Tabs
-              defaultActiveKey="Login"
-              id="uncontrolled-tab-example"
-              
-            >
+            <Tabs defaultActiveKey="Login" id="uncontrolled-tab-example">
               <Tab eventKey="Login" title="Login">
                 <Row>
                   <Row>
@@ -84,7 +91,8 @@ const LoginPage = () => {
                     </Link>
                   </Row>
                 </Row>
-              </Tab><Tab eventKey="Registration" title="Registration">
+              </Tab>
+              <Tab eventKey="Registration" title="Registration">
                 <Row>
                   <Row>
                     <h3>Register</h3>
@@ -94,6 +102,7 @@ const LoginPage = () => {
                       <FormGroup>
                         <Label for="exampleEmail">Username</Label>
                         <Input
+                          onChange={handleChange}
                           type="username"
                           name="email"
                           placeholder="Enter Username "
@@ -102,6 +111,7 @@ const LoginPage = () => {
                       <FormGroup>
                         <Label for="exampleEmail">Email</Label>
                         <Input
+                          onChange={handleChange}
                           type="email"
                           name="email"
                           placeholder="Enter Email "
@@ -110,6 +120,7 @@ const LoginPage = () => {
                       <FormGroup>
                         <Label for="exampleEmail">Password</Label>
                         <Input
+                          onChange={handleChange}
                           type="password"
                           name="email"
                           placeholder="Enter Password "
@@ -118,11 +129,21 @@ const LoginPage = () => {
                       <FormGroup>
                         <Label for="examplePassword">Confirm Password</Label>
                         <Input
+                          onChange={handleChange}
                           type="password"
                           name="password"
                           placeholder="Confirm Password "
                         />
                       </FormGroup>
+                      <Button
+                        name="submit"
+                        variant="primary"
+                        value="save"
+                        type="submit"
+                        className="justify-item-center"
+                      >
+                        Submit
+                      </Button>
                     </Form>
                   </Row>
                   <Row style={{ alignItem: "center" }}>
@@ -144,8 +165,6 @@ const LoginPage = () => {
                   </Row>
                 </Row>
               </Tab>
-              
-              
             </Tabs>
           </Col>
           <Col xl lg xxl={3} className=" ">
