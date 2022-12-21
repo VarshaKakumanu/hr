@@ -1,10 +1,10 @@
-import React from "react";
+import React, {  useState } from "react";
+import Button from 'react-bootstrap/Button';
 import {
   Container,
   Col,
   Form,
   FormGroup,
-  FormText,
   Input,
   Label,
   Row,
@@ -14,7 +14,6 @@ import png from "./png.png";
 import { Link } from "react-router-dom";
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
-import { useState } from "react";
 const LoginPage = () => {
   const [data, setData] = useState({
     username: "",
@@ -23,7 +22,7 @@ const LoginPage = () => {
     confirmpassword: "",
   });
   const handleChange = (e) =>{
-    setState({ ...state, [e.target.name]: [e.target.value] });
+    setData({ ...data, [e.target.name]: [e.target.value] });
 
   }
   return (
